@@ -1,12 +1,12 @@
 # NMTMultiPipeline
-# Train an NMT model with various NMT platforms:
-# - Nematus
-# - MarianNMT
-# - OpenNMT
-# - OpenNMT-py
+Train an NMT model with various NMT platforms:
+- Nematus
+- MarianNMT
+- OpenNMT
+- OpenNMT-py
 
-Version 0.1.0
-Date 22/06/2018
+## Version 0.1.0
+## Date 22/06/2018
 
 * To train:
 0. Export the following global variables:
