@@ -5,10 +5,10 @@ Train an NMT model with various NMT platforms:
 - OpenNMT
 - OpenNMT-py
 
-## Version 0.1.0
-## Date 22/06/2018
+> Version 0.1.0
+> Date 22/06/2018
 
-* To train:
+# To train:
 0. Export the following global variables:
 export SRCLANG=[YOUR SOURCE LANGUAGE CODE, e.g., en]
 export TRGLANG=[YOUR TARGET LANGUAGE CODE, e.g., de]
@@ -36,4 +36,5 @@ Run the following scripts in this order to train
 
 !Currently nematus and marian are supported.
 
+# To translate
 Translation scripts - yet to come!
