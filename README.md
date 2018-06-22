@@ -9,10 +9,10 @@ Train an NMT model with various NMT platforms:
 > Date 22/06/2018
 
 # To train:
-0. Export the following global variables:
-`export SRCLANG=[YOUR SOURCE LANGUAGE CODE, e.g., en]`
-`export TRGLANG=[YOUR TARGET LANGUAGE CODE, e.g., de]`
-`export ENGINEDIR=[THE DIRECTORY WHERE DATA AND MODELS WILL BE KEPT]`
+0. Export the following global variables: \
+`export SRCLANG=[YOUR SOURCE LANGUAGE CODE, e.g., en]` \
+`export TRGLANG=[YOUR TARGET LANGUAGE CODE, e.g., de]` \
+`export ENGINEDIR=[THE DIRECTORY WHERE DATA AND MODELS WILL BE KEPT]` \
 
 Run the following scripts in this order to train
 - 1_split_ttv.sh [SOURCE_FILE] [TARGET_FILE] [SRCLANG] [TRGLANG] [ENGINEDIR] [TESTCOUNT] [VALCOUNT]
