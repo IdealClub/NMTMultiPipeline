@@ -3,6 +3,10 @@
 DATADIR=$ENGINEDIR/data
 REF=$DATADIR/val.trg
 
-./postprocess.sh < $1 > file.out 2>/dev/null
-./multi-bleu-detok.perl $REF < file.out 2>/dev/null \
+MTTools=$( dirname $0 )
+
+cat $1 > $DATADIR/raw.out
+
+$MTTools/postprocess.sh < $DATADIR/raw.out > $DATADIR/postprocessed.out 2>/dev/null
+$MTTools/multi-bleu-detok.perl $REF < $DATADIR/postprocessed.out 2>/dev/null \
     | sed -r 's/BLEU = ([0-9.]+),.*/\1/'

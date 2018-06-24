@@ -1,2 +1,9 @@
 #!/bin/bash
-sed -r 's/\@\@ //g' | ./detruecase.perl | ./detokenizer.perl -l $TRGLANG
+
+MTTools=$( dirname $0 )
+
+if [ -z $TRGLANG ]
+then
+    TRGLANG=en
+fi
+sed -r 's/\@\@ //g' | $MTTools/detruecase.perl | $MTTools/detokenizer.perl -l $TRGLANG
