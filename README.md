@@ -29,7 +29,7 @@ Run the following in order to translate\
 ### comboscript for translation 
 `main_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]`
 
-#Arguments for training and translation
+# Arguments for training and translation
 `[SOURCE_FILE]` - the source file; in textual format, UTF-8 encoded\
 `[TARGET_FILE]` - the target file; in textual format, UTF-8 encoded\
 `[SRCLANG]` - the source language code, e.g., en\
