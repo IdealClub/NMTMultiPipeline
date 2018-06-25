@@ -23,8 +23,11 @@ Run the following scripts in this order to train\
 
 # To translate
 Run the following in order to translate\
-`6_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]`\
+`6_translate.sh [ENGINEDIR] [INPUT] [NMT_SYSTEM] [GPU_ID]`\
 `7_postprocess.sh [INPUT_TR] [TRGLANG]`
+
+## comboscript for translation 
+`main_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]`
 
 `[SOURCE_FILE]` - the source file; in textual format, UTF-8 encoded\
 `[TARGET_FILE]` - the target file; in textual format, UTF-8 encoded\
@@ -36,7 +39,7 @@ Run the following in order to translate\
 `[NMT_SYSTEM]` - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py\
 `[GPU_ID]` - the id of the GPU device which you want to run your system on\
 `[INPUT]` - file to translate\
-`[INPUT_TR]` - translated file to postprocess (reverses BPE, tokenisation and truecasing)\
+`[INPUT_TR]` - translated file to postprocess (reverses BPE, tokenisation and truecasing)
 
 !Currently nematus and marian are supported.
 
