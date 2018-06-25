@@ -19,7 +19,11 @@ Run the following scripts in this order to train\
 `2_tokenize_data.sh [SRCLANG] [TRGLANG] [ENGINEDIR]`\
 `3_truecase_data.sh [ENGINEDIR]`\
 `4_dictionary.sh [ENGINEDIR]`\
-`5_train.sh [ENGINEDIR] [NMT_SYSTEM]`
+`5_train.sh [ENGINEDIR] [NMT_SYSTEM] [GPU_ID]`
+
+# To translate
+Run the following in order to translate\
+6_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]
 
 [SOURCE_FILE] - the source file; in textual format, UTF-8 encoded\
 [TARGET_FILE] - the target file; in textual format, UTF-8 encoded\
@@ -29,8 +33,8 @@ Run the following scripts in this order to train\
 [TESTCOUNT] - the count for the test set\
 [VALCOUNT] - the count for the validation set\
 [NMT_SYSTEM] - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py
+[GPU_ID] - the id of the GPU device which you want to run your system on
+[INPUT] - file to translate
 
 !Currently nematus and marian are supported.
 
-# To translate
-Translation scripts - yet to come!
