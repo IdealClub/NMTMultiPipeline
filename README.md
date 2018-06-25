@@ -23,18 +23,20 @@ Run the following scripts in this order to train\
 
 # To translate
 Run the following in order to translate\
-6_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]
+`6_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]`\
+`7_postprocess.sh [INPUT_TR] [TRGLANG]`
 
-[SOURCE_FILE] - the source file; in textual format, UTF-8 encoded\
-[TARGET_FILE] - the target file; in textual format, UTF-8 encoded\
-[SRCLANG] - the source language code, e.g., en\
-[TRGLANG] - the target language code, e.g., pt\
-[ENGINEDIR] - the directory where all the data and models will be stored\
-[TESTCOUNT] - the count for the test set\
-[VALCOUNT] - the count for the validation set\
-[NMT_SYSTEM] - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py
-[GPU_ID] - the id of the GPU device which you want to run your system on
-[INPUT] - file to translate
+`[SOURCE_FILE]` - the source file; in textual format, UTF-8 encoded\
+`[TARGET_FILE]` - the target file; in textual format, UTF-8 encoded\
+`[SRCLANG]` - the source language code, e.g., en\
+`[TRGLANG]` - the target language code, e.g., pt\
+`[ENGINEDIR]` - the directory where all the data and models will be stored\
+`[TESTCOUNT]` - the count for the test set\
+`[VALCOUNT]` - the count for the validation set\
+`[NMT_SYSTEM]` - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py
+`[GPU_ID]` - the id of the GPU device which you want to run your system on
+`[INPUT]` - file to translate
+`[INPUT_TR]` - translated file to postprocess (reverses BPE, tokenisation and truecasing)
 
 !Currently nematus and marian are supported.
 
