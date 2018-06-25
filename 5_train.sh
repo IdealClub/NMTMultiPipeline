@@ -47,5 +47,5 @@ case "$NMT" in
             ;;
         3)
             $MTTools/5_c_train_opennmt.sh $ENGINEDIR $DEVICEID
-            ;; 
+            ;;
 esac

@@ -20,7 +20,7 @@ do
     $SUBWORDTools/apply_bpe.py -c $DATADIR/bpe.trg < $DATADIR/$FILE.tc.trg > $DATADIR/${FILE}.tc.bpe.trg
 done
 
- build network dictionary
+# build network dictionary
 python2 $MTTools/build_dictionary.py $DATADIR/train.tc.bpe.src
 python2 $MTTools/build_dictionary.py $DATADIR/train.tc.bpe.trg
 
