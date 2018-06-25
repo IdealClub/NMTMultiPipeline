@@ -33,10 +33,10 @@ Run the following in order to translate\
 `[ENGINEDIR]` - the directory where all the data and models will be stored\
 `[TESTCOUNT]` - the count for the test set\
 `[VALCOUNT]` - the count for the validation set\
-`[NMT_SYSTEM]` - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py
-`[GPU_ID]` - the id of the GPU device which you want to run your system on
-`[INPUT]` - file to translate
-`[INPUT_TR]` - translated file to postprocess (reverses BPE, tokenisation and truecasing)
+`[NMT_SYSTEM]` - the system you want to train. Choose one of: nematus, marian, opennmt, opennmt-py\
+`[GPU_ID]` - the id of the GPU device which you want to run your system on\
+`[INPUT]` - file to translate\
+`[INPUT_TR]` - translated file to postprocess (reverses BPE, tokenisation and truecasing)\
 
 !Currently nematus and marian are supported.
 
