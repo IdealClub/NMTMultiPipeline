@@ -26,9 +26,10 @@ Run the following in order to translate\
 `6_translate.sh [ENGINEDIR] [INPUT] [NMT_SYSTEM] [GPU_ID]`\
 `7_postprocess.sh [INPUT_TR] [TRGLANG]`
 
-## comboscript for translation 
+### comboscript for translation 
 `main_translate.sh [ENGINEDIR] [INPUT] [TRGLANG] [NMT_SYSTEM] [GPU_ID]`
 
+#Arguments for training and translation
 `[SOURCE_FILE]` - the source file; in textual format, UTF-8 encoded\
 `[TARGET_FILE]` - the target file; in textual format, UTF-8 encoded\
 `[SRCLANG]` - the source language code, e.g., en\
